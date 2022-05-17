@@ -2,8 +2,6 @@
 //    -> NÃO COMENTE NENHUMA DAS FUNÇÕES DECLARADAS!!! 
 //    -> NÃO MODIFIQUE OS PARÂMETROS DAS FUNÇÕES!!! ()
 
-
-
 // EXERCÍCIO 01
 function retornaTamanhoArray(array) {
     return array.length;
