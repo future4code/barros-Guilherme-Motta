@@ -86,9 +86,9 @@ function classificaTriangulo(ladoA, ladoB, ladoC) {
         return "Isósceles";
     }else {
         return "Escaleno";
-    }
-    
+    }    
 }
+
 // EXERCÍCIO 10
 function retornaSegundoMaiorESegundoMenor(array) {
     let ordenaArrayOriginal = array.sort((a,b)=>
@@ -123,7 +123,6 @@ function retornaPessoasAutorizadas(pessoas) {
         } 
     })
    return filtraPessoaAutorizadas;
-
 }
 
 // EXERCÍCIO 13B
@@ -136,22 +135,18 @@ function retornaPessoasNaoAutorizadas(pessoas) {
       }
   }
 return pessoasNaoAutorizadas;
-  
-  
 }
 
 // EXERCÍCIO 14
 function retornaContasComSaldoAtualizado(contas) {
 
     for(let i=0; i<contas.length; i++){
-
         let entradas = [];
 
         const calculaSaldo = (utilizador) => {
             utilizador[i].compras.forEach(nr => entradas.push(nr* -1));
         }
         calculaSaldo(contas);
-
 
         const somaNumeros = (numeros) => {
             return numeros.reduce((sum, nr)=>sum + nr, 0);
@@ -179,13 +174,10 @@ function retornaArrayOrdenadoAlfabeticamente(consultas) {
 // EXERCÍCIO 15B
 function retornaArrayOrdenadoPorData(consultas) {
     const teste = consultas.map((item)=>{
-        for(let a of item.dataDaConsulta){
-            
+        for(let a of item.dataDaConsulta){   
             // a = new Date (item.dataDaConsulta)
             // console.log(a);
         }
-        
-      
     })
     // tentei fazer essa questão, de algumas maneiras, contudo acabei não conseguindo.
 }
