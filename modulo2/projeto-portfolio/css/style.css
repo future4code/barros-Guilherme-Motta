@@ -1,0 +1,123 @@
+#menu{
+    width: 50%;
+    background-color: wheat;
+    float:right;
+    padding:10px; 
+    border: 2px solid black;
+    border-radius: 5px;
+}
+#inicioPagina1{
+    width: 100%;
+    height: 400px;
+    background-color:deepskyblue;
+    position:relative;
+    display: inline-block;
+    border:2px solid black;
+    box-sizing: border-box;
+}
+#titulo{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+#paiDeTodos{
+    background-color: rgba(50,77, 200,0.7);
+    position: relative;
+    height: 1000px;
+    width:100%;
+}
+
+#centraliza-img-01{
+    background-color: #81f3a7;
+    display: inline-block;
+    text-align: center;
+    height: 350px;
+    width: 33.33%;
+    box-sizing: border-box;
+}
+
+#centraliza-img-02{
+    background-color: red;
+    display: inline-block;
+    text-align: center;
+    height: 350px;
+    width: 33.33%;
+    position: absolute;
+    box-sizing: border-box;
+}
+
+#centraliza-img-03{
+    background-color: black;
+    color: wheat;
+    width:33.33%;
+    height: 350px;;
+    text-align: center;
+    box-sizing: border-box;
+    position: absolute;
+    top:0px;
+    right: 0px;
+    display: inline-block;
+}
+
+
+
+
+#img1{
+    width:250px;
+}
+
+#img2{
+    width: 150px;
+}
+#img3{
+    width: 150px;
+}
+
+
+/* #centralizaProjeto2{
+    right: 50%;
+    transform: translate(50%);
+}
+
+#centralizaProjeto3{
+    right: 0px;
+    transform: translate(0, 0);
+} */
+
+/* h5{
+    position: ;
+
+} */
+
+
+
+/* .projetos{
+    display: inline-block;
+    width:33.33%;
+    position: absolute;
+    top: 50%;
+    height: 500px;
+    border:2px solid black;
+    box-sizing: border-box;
+    text-align: center;
+} */
+/* #centralizaProjeto1{
+    
+    
+} */
+
+
+
+a{  
+text-decoration: none;
+color: black;
+}
+a:visited {
+color:black;
+}
+li{
+    display:inline;
+    position: relative;
+}

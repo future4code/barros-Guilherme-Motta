@@ -1,0 +1,20 @@
+#titulo1{
+    text-align: center;
+}
+#container{
+    position: relative;
+    height: 300px;
+    box-sizing: border-box;
+}
+#formulario{
+    display: inline-block;
+    padding: 15px;
+    position: absolute;
+    top:25%;
+    right: 50%;
+    transform: translate(50%, -25%);
+}
+
+input{
+    background-color: orange;
+}

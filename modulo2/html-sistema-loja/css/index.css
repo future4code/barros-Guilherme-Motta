@@ -1,0 +1,10 @@
+#texto-principal{
+    position: absolute;
+    bottom: 50%;
+    left:50%;
+    transform: translate(-50%,50%);
+    font-family: 'Patrick Hand', cursive;
+    /* line-height: 25px; */
+    word-spacing: 3px;
+}
+
