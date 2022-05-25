@@ -4,133 +4,160 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="../css/ctrlEstoque.css" rel="stylesheet">
+    <link href="../css/padroniza.css" rel="stylesheet">
+    <link href="../imagens/icons8-estoque.png" rel="icon" type="png">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
     <title>Controle de Estoque</title>
-    <style>
-        img{
-            width: 100px;
-        }
-    </style>
 </head>
 <body>
     <header>
-        <p>DevShops</p>
+        <img id="id-visual" src="../imagens/imagemLoja.png">
+
+        <h1>DevShops</h1>
+        <h3 id="p1">A loja feita para os desenvolvedores web!</h3>
+
+        <nav>
+            <a href="./index.html">Página Inicial |</a>
+            <a href="./ctrl-estoque.html">Controle de Estoque |</a>
+            <a href="./add-produto.html">Adicionar Produto |</a>
+            <a href="./funcionarios.html">Funcionários</a>
+        </nav>
     </header>
-    
-    <nav>
-        <a href="./index.html">Página Inicial</a>
-        <a href="./ctrl-estoque.html">Controle de Estoque</a>
-        <a href="./add-produto.html">Adicionar Produto</a>
-        <a href="./funcionarios.html">Funcionários</a>
-    </nav>
 
-    <h2>Controle de Estoque</h2>
+    <h2 id="titulo2">Controle de Estoque</h2>
 
-    <table>
-        <tr>
-            <th>Foto</th>
-            <th>Descrição</th>
-            <th>Preço (R$)</th>
-            <th>Quantidade disponível</th>
-        </tr>
+<main id="container">
 
-        <tr>
-            <td>
-                <a href="https://www.kelter.com.br/cadeiras/cadeira-de-escritorio/cadeira-escritorio-presidente-com-massageador-e-aquecimento-kelter-v404?parceiro=7655&gclid=Cj0KCQjw1ZeUBhDyARIsAOzAqQLc212ItpJRM7VkaWSaMxktExP4NQc64jFTsWYCmlhDOD1HSbK9tWwaArLBEALw_wcB">
-                    <img src="../imagens/cadeira ergonomica.jpg" alt="cadeira ergonomica com aquecedor da marca Kelter"/>
-                </a>
-            </td>
+    <section id="filhoDoMain">
+        <table id="titulo">
+            <tr>
+                <th>Foto</th>
+                <th>Descrição</th>
+                <th>Preço (R$)</th>
+                <th>Quantidade disponível</th>
+            </tr>
+<br><br>
+            <tr>
+                <td>
+                    <a href="https://www.kelter.com.br/cadeiras/cadeira-de-escritorio/cadeira-escritorio-presidente-com-massageador-e-aquecimento-kelter-v404?parceiro=7655&gclid=Cj0KCQjw1ZeUBhDyARIsAOzAqQLc212ItpJRM7VkaWSaMxktExP4NQc64jFTsWYCmlhDOD1HSbK9tWwaArLBEALw_wcB">
+                        <img class="imagem" src="../imagens/cadeira ergonomica.jpg" alt="cadeira ergonomica com aquecedor da marca Kelter"/>
+                    </a>
+                </td>
 
-            <td>
-                <p>Cadeira Escritório Presidente Com Massageador e Aquecimento
-                <br>
-                Kelter Cinza</p>
-            </td>
-            <td>1.000,00 </td>
-            <td> 3 </td>
-        </tr>
+                <td>
+                    <p>Cadeira Escritório Presidente Com Massageador e Aquecimento
+                    <br>
+                    Kelter Cinza</p>
+                </td>
+                <td>1.000,00 </td>
+                <td> 3 </td>
+            </tr>
 
-        <tr>
-            <td>
-                <a href="https://edifier.com.br/headset-gamer-7-1-hecate-g7-over-ear-edifier-preto.html?utm_source=cpc+PMAX&utm_medium=Fones&gclid=Cj0KCQjw1ZeUBhDyARIsAOzAqQL_q7JZV9ClVoc6tn8n9tByVOmwwEpUypI5J91pqMfLO0B4X0MkQEoaAs-AEALw_wcB">
-                    <img src="../imagens/hecate g7.jpg" alt="headset da marca edifier, hecate g7"/>
-                </a>
-            </td>
+            <tr>
+                <td>
+                    <a href="https://edifier.com.br/headset-gamer-7-1-hecate-g7-over-ear-edifier-preto.html?utm_source=cpc+PMAX&utm_medium=Fones&gclid=Cj0KCQjw1ZeUBhDyARIsAOzAqQL_q7JZV9ClVoc6tn8n9tByVOmwwEpUypI5J91pqMfLO0B4X0MkQEoaAs-AEALw_wcB">
+                        <img class="imagem" src="../imagens/hecate g7.jpg" alt="headset da marca edifier, hecate g7"/>
+                    </a>
+                </td>
 
-            <td>
-                <p>Fone gamer da edifier com um ótimo
-                <br>
-                custo-benefício </p>
-            </td>
-            <td> 999,00 </td>
-            <td> 10 </td>
-        </tr>
+                <td>
+                    <p>Fone gamer da edifier com um ótimo
+                    <br>
+                    custo-benefício </p>
+                </td>
+                <td> 999,00 </td>
+                <td> 10 </td>
+            </tr>
 
-        <tr>
-            <td>
-                <a href="https://www.amazon.com.br/Eloquent-JavaScript-3rd-Introduction-Programming/dp/1593279507/ref=asc_df_1593279507/?tag=googleshopp00-20&linkCode=df0&hvadid=379787788238&hvpos=&hvnetw=g&hvrand=6785609062867161490&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9101013&hvtargid=pla-548660160165&psc=1">
-                    <img src="../imagens/livro-sobre-javascript.jpg" alt="livro sobre a linguagem de programação javascript"/>
-                </a>
-            </td>
-            <td>
-                <p>Excelente livro para entender e aprender
-                <br>
-                os conceitos básicos do javascript</p>    
-            </td>
+            <tr>
+                <td>
+                    <a href="https://www.amazon.com.br/Eloquent-JavaScript-3rd-Introduction-Programming/dp/1593279507/ref=asc_df_1593279507/?tag=googleshopp00-20&linkCode=df0&hvadid=379787788238&hvpos=&hvnetw=g&hvrand=6785609062867161490&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9101013&hvtargid=pla-548660160165&psc=1">
+                        <img class="imagem" src="../imagens/livro-sobre-javascript.jpg" alt="livro sobre a linguagem de programação javascript"/>
+                    </a>
+                </td>
 
-            <td> 201,60 </td>
-            <td> 16 </td>
-        </tr>
+                <td>
+                    <p>Excelente livro para entender e aprender
+                    <br>
+                    os conceitos básicos do javascript</p>    
+                </td>
 
-        <tr>
-            <td>
-                <a href="https://www.kabum.com.br/produto/94111/teclado-mecanico-gamer-razer-blackwidow-tournament-v2-chroma-razer-switch-green-us-rz03-02190200-r3u1?gclid=Cj0KCQjw1ZeUBhDyARIsAOzAqQJp0QOacPUJLFrPj8_gMEGuzlpidBob2dZTDoj-7c_bSFvZ2Df1kGAaAqyoEALw_wcB">
-                    <img src="../imagens/teclado-mecânico.jpg" alt="teclado mecânico da razer com Switch verde"/>
-                </a>
-            </td>
-            <td>
-                <p>Teclado Gamer Razer Blackwidow Tournament Chroma
-                <br>
-                V2 Mecânico - Razer Switch Green</p></a></td>
-            <td> 983,90 </td>
-            <td> 4 </td>
-        </tr>
+                <td> 201,60 </td>
+                <td> 16 </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <a href="https://www.kabum.com.br/produto/94111/teclado-mecanico-gamer-razer-blackwidow-tournament-v2-chroma-razer-switch-green-us-rz03-02190200-r3u1?gclid=Cj0KCQjw1ZeUBhDyARIsAOzAqQJp0QOacPUJLFrPj8_gMEGuzlpidBob2dZTDoj-7c_bSFvZ2Df1kGAaAqyoEALw_wcB">
+                        <img class="imagem" src="../imagens/teclado-mecânico.jpg" alt="teclado mecânico da razer com Switch verde"/>
+                    </a>
+                </td>
+                <td>
+                    <p>Teclado Gamer Razer Blackwidow Tournament Chroma
+                    <br>
+                    V2 Mecânico - Razer Switch Green</p></a></td>
+                <td> 983,90 </td>
+                <td> 4 </td>
+            </tr>
+
+            <!-- Crie mais uma linha desta tabela abaixo \/ -->
+            <tr>
+                <td>
+                    <a href="https://www.dell.com/pt-br/shop/notebooks/notebook-gamer-alienware-m15-r6/spd/alienware-m15-r6-laptop/am15r615w?gacd=9688255-15006-5761040-275357028-0&dgc=ST&cid=71700000068277848&gclid=Cj0KCQjw1ZeUBhDyARIsAOzAqQLDjhRe5tHr0L1RssmqfX4IbW6VXb0YeuaHK8SrxKWg_QJq07QgPj8aArQgEALw_wcB&gclsrc=aw.ds&nclid=wzpVShW-2-L4Zt6foZMld8f_E3gvUv1Wh2EJ5LY-yzt_PHZSW5Y5lJ2frfFMAjt1">
+                        <img class="imagem" src="../imagens/notebook-alienware.jpg" alt="notebook alienware m15 R6"/>
+                    </a>
+                </td>
+                <td>
+                    <p> Desafie os limites O m15 R6 é o primeiro Alienware produzido no Brasil.
+                    <br>     
+                    Com a última geração de placas de vídeo nvidia série 30 e 11a geração de
+                    <br> 
+                    processadores Intel Core i7, proporciona altíssima performance para rodar
+                    <br>
+                    jogos pesados e multitarefa. </p></td>
+                <td> 11.048,00 </td>
+                <td> 23 </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <a href="https://www.kabum.com.br/produto/105006/headset-gamer-hyperx-cloud-orbit-s-drivers-100mm-audio-3d-multiplas-plataformas-usb-a-usb-c-e-p3-hx-hscos-gm-ww">
+                        <img class="imagem" src="../imagens/hyperx-cloud-orbitS.jpg" alt="fone da marca hyperX, cloud orbit s">
+                    </a>
+                </td>
+                <td>
+                    <p>O HyperX Cloud Orbit leva você para outra dimensão de imersão de
+                    <br>
+                    áudio de alta qualidade com drivers magnéticos com tecnologia
+                    <br>
+                    planar Audeze e tecnologia de áudio 3D Waves Nx </p>
+                </td>
+                <td>2.099,90</td>
+                <td>5</td>
+            </tr>
+        </table>
+    </section>    
+</main>
+
+
+    <footer>
+        <p>Siga-nos nas redes sociais!</p>
+        <a target="_blank" href="https://icons8.com">
+        <img src="../imagens/icons8-linkedin-48.png">
+        </a>
+        <img src="../imagens/icons8-facebook-48.png"> 
+        <img src="../imagens/icons8-instagram-48.png">
+            
+        <div id="suporte">
+            <h3 id="suport02">Contato do suporte:</h3>
+            <a href="mailto:guilhermeMotta.N_F@hotmail.com">
+            <img src="../imagens/icons8-suporte-48.png" >
+            </a>
+        </div>
+            <p>Todos os direitos reservados <img src="../imagens/icons8-direitos-autorais-24.png"></p>
         
-        <!-- Crie mais uma linha desta tabela abaixo \/ -->
-        <tr>
-            <td>
-                <a href="https://www.dell.com/pt-br/shop/notebooks/notebook-gamer-alienware-m15-r6/spd/alienware-m15-r6-laptop/am15r615w?gacd=9688255-15006-5761040-275357028-0&dgc=ST&cid=71700000068277848&gclid=Cj0KCQjw1ZeUBhDyARIsAOzAqQLDjhRe5tHr0L1RssmqfX4IbW6VXb0YeuaHK8SrxKWg_QJq07QgPj8aArQgEALw_wcB&gclsrc=aw.ds&nclid=wzpVShW-2-L4Zt6foZMld8f_E3gvUv1Wh2EJ5LY-yzt_PHZSW5Y5lJ2frfFMAjt1">
-                    <img src="../imagens/notebook-alienware.jpg" alt="notebook alienware m15 R6"/>
-                </a>
-            </td>
-            <td>
-                <p> Desafie os limites O m15 R6 é o primeiro Alienware produzido no Brasil.
-                <br>     
-                Com a última geração de placas de vídeo nvidia série 30 e 11a geração de
-                <br> 
-                processadores Intel Core i7, proporciona altíssima performance para rodar
-                <br>
-                jogos pesados e multitarefa. </p></td>
-            <td> 11.048,00 </td>
-            <td> 23 </td>
-        </tr>
-
-        <tr>
-            <td>
-                <a href="https://www.kabum.com.br/produto/105006/headset-gamer-hyperx-cloud-orbit-s-drivers-100mm-audio-3d-multiplas-plataformas-usb-a-usb-c-e-p3-hx-hscos-gm-ww">
-                    <img src="../imagens/hyperx-cloud-orbitS.jpg" alt="fone da marca hyperX, cloud orbit s">
-                </a>
-            </td>
-            <td>
-                <p>O HyperX Cloud Orbit leva você para outra dimensão de imersão de
-                <br>
-                áudio de alta qualidade com drivers magnéticos com tecnologia
-                <br>
-                planar Audeze e tecnologia de áudio 3D Waves Nx </p>
-            </td>
-            <td>2.099,90</td>
-            <td>5</td>
-        </tr>
-    </table>
+    </footer>
 
 </body>
 </html>

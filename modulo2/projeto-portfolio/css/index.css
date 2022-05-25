@@ -1,0 +1,106 @@
+#inicioPagina1{
+    width: 100%;
+    height: 750px;
+    /* background-color:deepskyblue; */
+    background-color: rgba(50,77, 200,0.7);
+    position:relative;
+    background-image: url(../imagens/papel-de-fundo-pagina1.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+
+header{
+    color: white;
+    margin:10px;
+    position: absolute;
+    top:35%;
+    transform: translate(0, -60%);
+}
+#menu{
+    width: 50%;
+    background-color: wheat;
+    float:right;
+    padding:10px; 
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.sobre{
+    text-align: center;
+    color: greenyellow;
+}
+.sobreMim{
+    text-align: justify;
+    word-spacing: 2px;
+    position: absolute;
+    left:20%;
+    line-height: 25px;
+}
+
+#paiDaDescricao{
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+
+#container{
+    width:100%;
+    height: 300px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.organiza-elemento{
+    width:50%;
+    /* padding: 10px; */
+    box-sizing: border-box;
+    display:inline-block;
+    text-align: justify;
+    line-height: 25px;
+}
+#diferenca{
+    position: absolute;
+    top:0;
+    right: 0;
+    text-align: center;
+}
+#teste3{
+    position: absolute;
+    text-align: center;
+    background-color: aqua;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.itensRodape{
+    display: inline;
+}
+
+a{  
+    text-decoration: none;
+    color: black;
+    }
+    a:visited {
+    color:black;
+    }
+    strong{
+        color:greenyellow;
+    }

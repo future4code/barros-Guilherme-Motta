@@ -5,22 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Adicionar Produto</title>
+    <link href="../css/padroniza.css" rel="stylesheet">
+    <link href="../css/addProduto.css" rel="stylesheet">
+    <link href="../imagens/icons8-estoque.png" rel="icon" type="png">
 </head>
 <body>
     <header>
-        <p>DevShops</p>
+        <img id="id-visual" src="../imagens/imagemLoja.png">
+
+        <h1>DevShops</h1>
+        <h3 id="p1">A loja feita para os desenvolvedores web!</h3>
+
+        <nav>
+            <a href="./index.html">Página Inicial |</a>
+            <a href="./ctrl-estoque.html">Controle de Estoque |</a>
+            <a href="./add-produto.html">Adicionar Produto |</a>
+            <a href="./funcionarios.html">Funcionários</a>
+        </nav>
     </header>
     
-    <nav>
-        <a href="./index.html">Página Inicial</a>
-        <a href="./ctrl-estoque.html">Controle de Estoque</a>
-        <a href="./add-produto.html">Adicionar Produto</a>
-        <a href="./funcionarios.html">Funcionários</a>
-    </nav>
-
-    
-    <h2>Adicionar Produto</h2>
-    <form action="">
+    <h2 id="titulo1">Adicionar Produto</h2>
+  
+<div id="container">
+    <form id="formulario" action="" method="get">
             <label for="link-foto">Link para foto: </label>
             <input type="url" id="link-foto" name="link-foto">
             <br>
@@ -41,6 +48,25 @@
             <!-- Adicione ao type do botão abaixo o valor para que ele submeta o formulário -->
             <button type="submit" value="adicionar">Adicionar</button>
     </form>
+</div>    
+
+    <footer>
+        <p>Siga-nos nas redes sociais!</p>
+        <a target="_blank" href="https://icons8.com">
+        <img src="../imagens/icons8-linkedin-48.png">
+        </a>
+        <img src="../imagens/icons8-facebook-48.png"> 
+        <img src="../imagens/icons8-instagram-48.png">
+            
+        <div id="suporte">
+            <h3 id="suport02">Contato do suporte:</h3>
+            <a href="mailto:guilhermeMotta.N_F@hotmail.com">
+            <img src="../imagens/icons8-suporte-48.png" >
+            </a>
+        </div>
+            <p>Todos os direitos reservados <img src="../imagens/icons8-direitos-autorais-24.png"></p>
+        
+    </footer>
 
 </body>
 </html>

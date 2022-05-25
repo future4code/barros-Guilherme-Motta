@@ -1,0 +1,21 @@
+.imagem{
+    width:100px;
+}
+
+#titulo2{
+    text-align: center;
+    padding: 15px;
+}
+#container{ 
+    position: relative;
+    display: inline-block;
+    height: 850px;
+    border: 2px solid white;
+    box-sizing: border-box;
+}
+#filhoDoMain{
+    position: absolute;
+    top:0px;
+    left: 50%;
+    transform: translate(-50%,0);
+}
