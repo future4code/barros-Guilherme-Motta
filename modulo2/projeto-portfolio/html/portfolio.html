@@ -18,88 +18,102 @@
                     <td><a href="./#sobre">Sobre</a></td>
                     <td><a href="#inicioPagina">portfólio</a></td>
                     <td><a href="./#contato">contato</a></td>
-                    <td><button><a href="../imagens/Curriculo Guilherme .pdf">CV</a></button></td>
+                    <td><button id="botao1"><a href="../imagens/Curriculo Guilherme .pdf">Curriculo</a></button></td>
                 </tr>
             </table>
         </nav>   
         <h1 id="titulo">Portfólio</h1>
     </section>
     
-        <!-- vou tentar colocar alguma foto relativa ao porjeot na pagian do portfolio, e tentar usar a prop overflow, com algum valor que faça a minha suposta imagem vazar a minha mini div conatiner. -->
-    <br><br>
-
+        
     <div id="paiDeTodos">
         <ul id="centraliza-img-01">
             <li>
                 <h4>Sistema de loja</h4>
                 <img id="img1" src="../imagens/imagem-loja.png">
+            </li>
+
+            <li id="center">
                 <h5>Descrição:</h5>
-                <br>            
+                <p>Esse projeto tem o objetivo de simular uma loja online.
+                <br>
+                <span id="pontos">...</span>
+                <span id="mais">
+                    Criei esse projeto para treinar alguns conceitos de css, html. Para vê-lo é só você entrar no link a seguir: <br><br>
+                    <button><a id="botao01" class="entrarProjeto" href="../html/lojinha.html">lojinha</a> </button>
+                </span></p>
+        <br>
+                <button class="saibaMais" onclick="leiaMais()" id="btnLeiaMais">Leia mais</button>
             </li>
         </ul>
+
+
+
         <ul  id="centraliza-img-02">
             <li>
                 <h4>Churrascômetro</h4>
                 <br>
                 <img id="img2" src="../imagens/looney-barbecue.png">
-                <br><br><br>
-                <h5>Descrição:</h5>         
+                <br><br><br>  
+            </li>
+
+            <li id="teste">
+                <h5>Descrição:</h5>
+                <p>Esse projeto tem o objetivo de criar uma ferramenta tipo uma calculadora
+                <span id="pontos02">...</span>
+                <span id="mais02">
+                     Para vê-lo é só entrar no link a seguir: <br><br>
+                     <button><a id="botao02" class="entrarProjeto" href="../html/churras.html">Churras</a></button>
+                </span>  </p>
+            <br>
+                <button class="saibaMais" onclick="leiaMais2()" id="btnLeiaMais02">Leia mais</button>
             </li>
         </ul>
+
+
+
         <ul id="centraliza-img-03">
             <li>
-                <h4>Blackjack</h4>
+                <h4 id="h4">Blackjack</h4>
                 <br>
                 <img id="img3" src="../imagens/carta-de-baralho.png">
-                <br><br><br>
+                <br><br>
+            </li>
+
+            <li id="teste">
                 <h5>Descrição:</h5>
+                <p>Esse projeto tem o objetivo treinar alguns conceitos de JavaScript.
+                <br>
+                <span id="pontos03">...</span>
+                <span id="mais03">
+                    Para vê-lo é só entrar no link a seguir: <br><br>
+                    <button><a id="botao03" class="entrarProjeto" href="../html/blackjack.html">Blackjack</a></button>
+                </span>  </p>
+        
+                <button class="saibaMais" onclick="leiaMais3()" id="btnLeiaMais">Leia mais</button>
             </li>
         </ul>
 
-
-
-
     </div>
 
-
-
-
-
-
-
-    <!-- <div id="pai1">
-        <h4>Sistema de loja</h4>
-        <img id="img1" src="../imagens/imagem-loja.png">
-        <h5>Descrição:</h5>
-        <br>    
-    </div>
-
-    <div id="pai2">
-        <h4>Churrascômetro</h4>
-        <img id="img2" src="../imagens/looney-barbecue.png">
-        <h5>Descrição:</h5>
-    </div> -->
-    <!-- <article id="centralizaProjeto2">
-        <h4>Sistema de loja</h4>
-        <img id="img2" src="../imagens/imagem-loja.png">
-        <h5>Descrição:</h5>
-        <br>
-    </article> -->
-
-    <!-- <section class="projetos" id="centralizaProjeto2">
-        <h4>Sistema de loja</h4>
-        <img id="img2" src="../imagens/imagem-loja.png">
-        <h5>Descrição:</h5>
-        <br>
-    </section>
+    <footer>
+        <ul>
+            <li class="itensRodape"><a href="https://github.com/Gu1lherm3OM">
+                <img class="logoRodape" src="../imagens/github.png" alt="logo do github">
+            </a></li>
+            <li class="itensRodape"><a href="mailto:guilhermeoliveiraadamotta@gmail.com">
+                <img class="logoRodape" src="../imagens/gmail.png" alt="logo do gmail">
+            </a></li>
+            <li class="itensRodape"><a href="linkedin.com/in/guilherme-oliveira-78b754225">
+                <img class="logoRodape" src="../imagens/linkedin.png" alt="logo do linkedin ">
+            </a></li>
+        </ul>
+        <div id="ultimoPai">
+            <img id="copy" src=../imagens/copyright.png alt="simbolo do copyright">
+            <p id="ultimoTexto">Todos os Diretos Reservados - Guilherme Oliveira da Motta</p>
+        </div>
+    </footer>
     
-    <article class="projetos" id="centralizaProjeto3">
-        <h4>Jogo 21</h4>
-        
-        <img id="img3" >
-        
-        <h5>Descrição:</h5>
-    </article> -->
-
+    <script src="../javascript/index.js"></script>
 </body>
 </html>
