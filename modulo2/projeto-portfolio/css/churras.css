@@ -43,7 +43,6 @@ li{
 }
 
 #pai03{
-    /* background-color:red; */
     height: 500px;
     position:relative;
 }
@@ -51,7 +50,6 @@ li{
 
 #estilizar-img-projeto{
     width:700px;
-    /* height: 400px; */
     display: inline-block;
     position: absolute;
     top: 50%;
