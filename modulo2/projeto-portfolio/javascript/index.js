@@ -13,7 +13,6 @@ function leiaMais () {
         btnLeiaMais.innerHTML = "Ler menos";
     }
 }
-
 function leiaMais2 () {
     let pontos = document.querySelector("#pontos02");
     let maisTexto = document.querySelector("#mais02");
@@ -29,7 +28,6 @@ function leiaMais2 () {
         btnLeiaMais.innerHTML = "Ler menos";
     }
 }
-
 function leiaMais3 () {
     let pontos = document.querySelector("#pontos03");
     let maisTexto = document.querySelector("#mais03");
