@@ -1,10 +1,21 @@
 #menu{
     width: 50%;
-    background-color: wheat;
     float:right;
     padding:10px; 
-    border: 2px solid black;
+    border: 2px solid none;
     border-radius: 5px;
+    text-align: center;
+    box-sizing: border-box;
+}
+#botao1{
+    background-color: orangered;
+    width: 100px;
+    height: 50px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 30px;
+    box-sizing: border-box;
+    opacity: 0.8;
 }
 #inicioPagina1{
     width: 100%;
@@ -12,7 +23,7 @@
     background-color:deepskyblue;
     position:relative;
     display: inline-block;
-    border:2px solid black;
+    /* border:2px solid black; */
     box-sizing: border-box;
 }
 #titulo{
@@ -23,9 +34,9 @@
 }
 
 #paiDeTodos{
-    background-color: rgba(50,77, 200,0.7);
+    background-color: rgb(0, 200, 255, 0.5);
     position: relative;
-    height: 1000px;
+    height: 700px;
     width:100%;
 }
 
@@ -49,19 +60,22 @@
 }
 
 #centraliza-img-03{
+    /* padding-top	: 10px; */
     background-color: black;
     color: wheat;
     width:33.33%;
-    height: 350px;;
+    height: 350px;
     text-align: center;
     box-sizing: border-box;
     position: absolute;
     top:0px;
     right: 0px;
-    display: inline-block;
+    display:block;
 }
 
-
+#center{
+    text-align: center;
+}
 
 
 #img1{
@@ -75,39 +89,45 @@
     width: 150px;
 }
 
-
-/* #centralizaProjeto2{
-    right: 50%;
-    transform: translate(50%);
+#mais{
+    display:none;
+    background-color: #81f3a7;
+    padding: 8px;
+}
+.saibaMais{
+    background-color: yellow;
+    width: 100px;
+    height: 50px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 30px;
+    box-sizing: border-box;
+}
+#mais02{
+    display: none;
+    background-color: red;
+    padding: 8px;
 }
 
-#centralizaProjeto3{
-    right: 0px;
-    transform: translate(0, 0);
-} */
+#mais03{
+    display: none;
+    background-color: black;
+    padding: 8px;
+}
 
-/* h5{
-    position: ;
-
-} */
-
-
-
-/* .projetos{
-    display: inline-block;
-    width:33.33%;
-    position: absolute;
-    top: 50%;
-    height: 500px;
-    border:2px solid black;
+.entrarProjeto{
+    background-color: orangered;
+    width: 100px;
+    height: 50px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
     box-sizing: border-box;
-    text-align: center;
-} */
-/* #centralizaProjeto1{
-    
-    
-} */
-
+    /* opacity: 0.8; */
+}
+#h4{
+    padding-bottom: 8px;
+} 
 
 
 a{  
@@ -120,4 +140,65 @@ color:black;
 li{
     display:inline;
     position: relative;
+}
+
+footer{
+    background-color: blue;
+    display: inline-block;
+    /* height: 90px; */
+    width:100%;   
+    color:white;
+    font-size: 15px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.itensRodape{
+    display: inline;
+}
+.logoRodape{
+    width:30px;
+    height: 30px;
+    padding: 5px;
+}
+#ultimoTexto{ 
+    /* margin-left: 15%; */
+    text-align:center;
+}
+
+#copy{
+    height: 15px;
+    width:  15px;
+    position: absolute;
+    bottom: 10%;
+    left: 34%;
+}
+
+#ultimoPai{
+    position: relative;
+}
+
+
+#botao01{
+    background-color: #81f3a7;
+    color: black;
+}
+#botao01:hover{
+    background-color: black;
+    color: #81f3a7;
+}
+
+#botao02:hover{
+    background-color: black;
+    color:orangered;
+    opacity: 0.8;
+}
+
+#botao03{
+    background-color: wheat;
+    color:black;
+}
+#botao03:active{
+    background-color: black;
+    color:wheat;
 }
