@@ -1,0 +1,55 @@
+h2{
+    margin: 0.9375em;
+}
+
+#containerDoVideo{
+    height: 31.25em;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100%;
+    justify-items: center;
+    align-items: center;
+}
+
+video{
+    width:50%;
+    height:100%;
+}
+
+footer{
+    background-color:rgba(4, 4, 4, 0.672);
+    color:white;
+
+    height: 90px;
+    margin-top:18px;
+
+    position:sticky;
+    bottom:0;
+    left:0;
+
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-columns: 90% 10%;
+    grid-template-rows: 100%;
+    align-items: center;   
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+a:visited{
+    color: black;
+}
+
+#voltarPaginaAnterior{
+    background-color:white;
+    padding: 0.3125em;
+    /* width: 50px; */
+    width: 3.125em;
+    text-align: center;
+
+    border: 2px solid black;
+    border-radius: 1.6em;
+}
