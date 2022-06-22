@@ -1,0 +1,84 @@
+body{
+  /* position: relative; */
+  background-color: black;
+  color: #61dafb;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  width: 450px;
+  pointer-events: none;
+  position: absolute;
+  top: 150px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: #61dafb;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.PrimeiroTexto{
+  position: absolute;
+  top:450px;
+}
+
+.Botao{
+  position: absolute;
+  top: 520px;
+  right:50%;
+  transform: translate(50%, 50%);
+
+  border: 2px solid red;
+  border-radius: 0.625rem;
+
+  padding: 10px;
+  
+  cursor: pointer;
+
+  /* background-color: violet; */
+}
+
+.Botao:hover{
+  background-color: red;
+  border: 5px solid white;
+  color: white;
+}
+
+.Botao2{
+  position: absolute;
+  bottom:10px;
+  left: 10px;
+
+  background-color: white;
+  
+  border: 2px solid red;
+  border-radius:  0.50rem;
+  padding: 8px;
+
+  cursor: pointer;
+}
+
+.Botao2:hover{
+  background-color: red;
+  border: 5px solid white;
+  color: white;
+}
