@@ -1,0 +1,568 @@
+{
+	"info": {
+		"_postman_id": "cd9b8cc8-e359-44e1-8113-0ed211190398",
+		"name": "Atividade Labenu",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22361490"
+	},
+	"item": [
+		{
+			"name": "createPlaylist",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "guilherme-motta-barros",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Musicas Favoritas\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllPlaylists",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "guilherme-motta-barros",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addTrackToPlaylist",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "guilherme-motta-barros",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"SongBird\", \r\n    \"artist\": \"Kenny g\",\r\n    \"url\": \"https://www.youtube.com/watch?v=QzUNgiBPnfM\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/:playlistId/tracks",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists",
+						":playlistId",
+						"tracks"
+					],
+					"variable": [
+						{
+							"key": "playlistId",
+							"value": "c78eec60-2a4e-48e2-84f7-c2a5d33dce9e"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addTrackToPlaylist",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "guilherme-motta-barros",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Plot Twist\", \r\n    \"artist\": \"Sigrid\",\r\n    \"url\": \"https://www.youtube.com/watch?v=bNuCNZK-r5A\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/:playlistId/tracks",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists",
+						":playlistId",
+						"tracks"
+					],
+					"variable": [
+						{
+							"key": "playlistId",
+							"value": "c78eec60-2a4e-48e2-84f7-c2a5d33dce9e"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getPlaylistTracks",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "guilherme-motta-barros",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/:playlistId/tracks",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists",
+						":playlistId",
+						"tracks"
+					],
+					"variable": [
+						{
+							"key": "playlistId",
+							"value": "c78eec60-2a4e-48e2-84f7-c2a5d33dce9e"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "removeTrackFromPlaylist",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "guilherme-motta-barros",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/:playlistId/tracks/:trackId",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists",
+						":playlistId",
+						"tracks",
+						":trackId"
+					],
+					"variable": [
+						{
+							"key": "playlistId",
+							"value": "c78eec60-2a4e-48e2-84f7-c2a5d33dce9e"
+						},
+						{
+							"key": "trackId",
+							"value": "3395a7c5-391e-4108-aa29-e075aee9c0b0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "removeTrackFromPlaylist",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "guilherme-motta-barros",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/:playlistId/tracks/:trackId",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists",
+						":playlistId",
+						"tracks",
+						":trackId"
+					],
+					"variable": [
+						{
+							"key": "playlistId",
+							"value": "c78eec60-2a4e-48e2-84f7-c2a5d33dce9e"
+						},
+						{
+							"key": "trackId",
+							"value": "e31f20d5-9357-438b-b9f2-c5dbfe40da9a"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "removeTrackFromPlaylist",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "guilherme-motta-barros",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/:playlistId/tracks/:trackId",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists",
+						":playlistId",
+						"tracks",
+						":trackId"
+					],
+					"variable": [
+						{
+							"key": "playlistId",
+							"value": "c78eec60-2a4e-48e2-84f7-c2a5d33dce9e"
+						},
+						{
+							"key": "trackId",
+							"value": "9b848ea2-a0ff-4719-84ff-32db00403332"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "removeTrackFromPlaylist",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "guilherme-motta-barros",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/:playlistId/tracks/:trackId",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists",
+						":playlistId",
+						"tracks",
+						":trackId"
+					],
+					"variable": [
+						{
+							"key": "playlistId",
+							"value": "c78eec60-2a4e-48e2-84f7-c2a5d33dce9e"
+						},
+						{
+							"key": "trackId",
+							"value": "bbef5170-12e7-4784-8e69-be39e4ea3763"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "removeTrackFromPlaylist",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "guilherme-motta-barros",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/:playlistId/tracks/:trackId",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists",
+						":playlistId",
+						"tracks",
+						":trackId"
+					],
+					"variable": [
+						{
+							"key": "playlistId",
+							"value": "c78eec60-2a4e-48e2-84f7-c2a5d33dce9e"
+						},
+						{
+							"key": "trackId",
+							"value": "ae79c7c3-e7da-4e58-8682-a31c2ee22f98"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addTrackToPlaylist",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "guilherme-motta-barros",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Slang That Iron\", \r\n    \"artist\": \"YNW Melly\",\r\n    \"url\": \"https://www.youtube.com/watch?v=tLyI0a6B_0M\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/:playlistId/tracks",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists",
+						":playlistId",
+						"tracks"
+					],
+					"variable": [
+						{
+							"key": "playlistId",
+							"value": "c78eec60-2a4e-48e2-84f7-c2a5d33dce9e"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addTrackToPlaylist",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "guilherme-motta-barros",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Slow Down\", \r\n    \"artist\": \"YNW Saxkchaser\",\r\n    \"url\": \"https://www.youtube.com/watch?v=sdzSbvSSC7o\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/:playlistId/tracks",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists",
+						":playlistId",
+						"tracks"
+					],
+					"variable": [
+						{
+							"key": "playlistId",
+							"value": "c78eec60-2a4e-48e2-84f7-c2a5d33dce9e"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addTrackToPlaylist",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "guilherme-motta-barros",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Máquina do tempo\", \r\n    \"artist\": \"Matuê\",\r\n    \"url\": \"https://www.youtube.com/watch?v=ZPcG9PCfagM\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/:playlistId/tracks",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists",
+						":playlistId",
+						"tracks"
+					],
+					"variable": [
+						{
+							"key": "playlistId",
+							"value": "c78eec60-2a4e-48e2-84f7-c2a5d33dce9e"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "removeTrackFromPlaylist",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "guilherme-motta-barros",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists/:playlistId/tracks/:trackId",
+					"protocol": "https",
+					"host": [
+						"us-central1-labenu-apis",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"labefy",
+						"playlists",
+						":playlistId",
+						"tracks",
+						":trackId"
+					],
+					"variable": [
+						{
+							"key": "playlistId",
+							"value": "c78eec60-2a4e-48e2-84f7-c2a5d33dce9e"
+						},
+						{
+							"key": "trackId",
+							"value": "c45af93d-3dee-47de-95a3-e422499f5e9f"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
